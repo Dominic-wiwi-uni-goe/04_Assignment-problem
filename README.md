@@ -34,7 +34,7 @@ The `lp.assign` funciton uses the following arguemnts:
 
 ### Example fot the assignment problem in R
 
-Expemplary cost matrix
+Expemplary cost matrix:
 
 ![image](https://user-images.githubusercontent.com/102478331/160347889-5833ee7a-4a43-4629-b786-49abec822998.png)
 
