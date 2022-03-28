@@ -1,6 +1,6 @@
 ### The assignment problem in general
 
-The assignment problem is a special case of a linear programming problem. It is one of the fundamental combinational optimization problems in the branch of optimization or operations research in mathematics. Its goal consists in assigning **m resources** (usually workers) to **n tasks** (usually jobs) one to one basis while minimizing assignment costs. As a general rule, all jobs must be performed by exactly one worker and every worker must be assigned exclusively to one job.
+The assignment problem is a special case of a linear programming problem. It is one of the fundamental combinational optimization problems in the branch of optimization or operations research in mathematics. Its goal consists in assigning **m resources** (usually workers) to **n tasks** (usually jobs) on a **one to one** basis while minimizing assignment costs. As a general rule, all jobs must be performed by exactly one worker and every worker must be assigned exclusively to one job.
 
 The basic notation of the assignment problem is
 
