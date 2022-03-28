@@ -37,7 +37,7 @@ Expemplary cost matrix
 
 ![image](https://user-images.githubusercontent.com/102478331/160347889-5833ee7a-4a43-4629-b786-49abec822998.png)
 
-(1) Import the package with the 'library' fucntion
+(1) Import the package with the `library` fucntion
 
 ```
 library(lpSolve)
@@ -75,9 +75,27 @@ And look at the solution for the assignment of **m resources** (usually workers)
 lp.assign(costs)$solution
 ```
 
+### Incorporating human facotrs in the work assignment problem
+
+When we come back to the basic notation of the assignment problem 
+
+![image](https://user-images.githubusercontent.com/102478331/160347326-4c1d8298-65c8-4688-8930-c2cbfba0c973.png)
+
+where
+
+![image](https://user-images.githubusercontent.com/102478331/160347290-00f56fd9-7169-41ed-9094-1e304813d9a1.png)
+
+We can operationalize a cost matrix by the time in seconds worker i=1 needs for taks j=1. Therefore, c11 shall be equal to the operation time that picker i=1 needs to pick the batch j=1. 
+
+From our multi-level regression analysis, we know that each picker as a own reression funtion in the form of Y(i=1) = mx + t. Together with the attributes of a batch, we can estimate an operation time for each combination of cij.
+
+
+
+
+
+
 
 
 **Sources**: 
 - https://towardsdatascience.com/operations-research-in-r-assignment-problem-4a1f92a09ab
 - http://lpsolve.sourceforge.net/5.5/Presolve.htm
-- 
