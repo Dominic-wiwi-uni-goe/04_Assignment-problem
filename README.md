@@ -10,7 +10,7 @@ where
 
 ![image](https://user-images.githubusercontent.com/102478331/160347290-00f56fd9-7169-41ed-9094-1e304813d9a1.png)
 
-We can use the following linear assignment problem to assign a given number of workers to a given number of batches. Note that the number of workers and batched must be equal for the LP. **Any worker can be assigned to perform any job, incurring in some cost that may vary depending on the work-job assignment.**
+We can use the following linear assignment problem to assign a given number of workers to a given number of batches. Note that the number of workers and the number of batches must be equal for the LP. **Any worker can be assigned to perform any job, incurring in some cost that may vary depending on the work-job assignment.**
 
 Cost matrix:
 ![image](https://user-images.githubusercontent.com/102478331/160347754-c24f6bad-9561-49aa-aab0-8e6008b6b538.png)
