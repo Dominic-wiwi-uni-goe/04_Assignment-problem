@@ -139,7 +139,7 @@ When we assign the driver with their individual capabilities to given routes, th
 
 ![image](https://user-images.githubusercontent.com/102478331/160679242-716628cd-d2bb-4173-a4cf-b5d2c0f39468.png)
 
-Therefore, with a simulation of the route durations and assignment based on these simulations, we find that savings up to 13.37% in the toal route time are possible.
+Therefore, with a simulation of the route durations and assignment based on these simulations, we find that savings up to 13.37% for the toal route time are possible.
 
 
 
