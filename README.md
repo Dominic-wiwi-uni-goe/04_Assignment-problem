@@ -1,3 +1,5 @@
+## Work assignment based on individual human factors
+
 ### The assignment problem in general
 
 The assignment problem is a special case of a linear programming problem. It is one of the fundamental combinational optimization problems in the branch of optimization or operations research in mathematics. Its goal consists in assigning **m resources** (usually workers) to **n tasks** (usually jobs) on a **one to one** basis while minimizing assignment costs. As a general rule, all jobs must be performed by exactly one worker and every worker must be assigned exclusively to one job.
@@ -32,7 +34,7 @@ The `lp.assign` funciton uses the following arguemnts:
 
 **Note:** Presolve is a preprocess of the lp-model. It looks for ways to simplify it. For example it can delete unused variables and restrictions. Substitute fixed variable values by a constant and so on. The result is a new model that is less complex than the original model and likely solves faster. The result of presolve can be that there are less variables and/or constraints in the presolved model.
 
-### Example fot the assignment problem in R
+### Example for a general assignment problem in R
 
 Expemplary cost matrix:
 
@@ -76,9 +78,11 @@ And look at the solution for the assignment of **m resources** (usually workers)
 lp.assign(costs)$solution
 ```
 
-### Incorporating human facotrs in the work assignment problem
+### Incorporating human facotrs in the work assignment problem: Delivery routes assigned to professional truck drivers
 
-When we come back to the basic notation of the assignment problem 
+#### The assignment problem translated to truck drivers and route durations
+
+Frist, we recall the basic notation of the assignment problem 
 
 ![image](https://user-images.githubusercontent.com/102478331/160347326-4c1d8298-65c8-4688-8930-c2cbfba0c973.png)
 
@@ -86,9 +90,35 @@ where
 
 ![image](https://user-images.githubusercontent.com/102478331/160347290-00f56fd9-7169-41ed-9094-1e304813d9a1.png)
 
-We can operationalize a cost matrix by the time in seconds worker i=1 needs for taks j=1. Therefore, c11 shall be equal to the operation time that picker i=1 needs to pick the batch j=1. 
+Now, we set the cost in the cost matrix equal to a duration time in minutes. To drive delivery route j=1 (=task in the assignment problem),  truck driver i=1 (worker in the assignment problem) takes c11 of time to fulfil the route. But how do we calculate these times to get our cost matrix?
 
-From our multi-level regression analysis, we know that each picker as a own reression funtion in the form of Y(i=1) = mx + t. Together with the attributes of a batch, we can estimate an operation time for each combination of cij.
+
+#### The cost matrix calculated by the individual regression weights of the multi level model
+
+Second, we recall the multi level model discussed in **chapter 4** noted as:
+
+```
+model25 <- lmer(Tourdauer_Ist ~ Anzahl_Stopps + GTE + hour + Plan_Kap + KM + (Anzahl_Stopps | Fahrer), data = dataset_final)
+```
+
+However, rather than giving out the summary of the model with the estimates, we are interested in the individual estomates per truck dirver by
+
+```
+coef(model25)$Fahrer
+```
+
+Where we receive the regression weights for each truck drivers. 
+
+![image](https://user-images.githubusercontent.com/102478331/160670960-f74e4f67-e046-41cd-b0e2-0a47ed5b8763.png)
+
+
+
+
+
+
+
+
+
 
 
 
