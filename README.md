@@ -16,7 +16,7 @@ We can use the following linear assignment problem to assign a given number of w
 
 Cost matrix:
 
-![image](https://user-images.githubusercontent.com/102478331/160347754-c24f6bad-9561-49aa-aab0-8e6008b6b538.png)
+![image](https://user-images.githubusercontent.com/102478331/160680024-a8b60bbc-2802-4268-ae26-9c3b6dff7122.png)
 
 
 ### The assignment problem in R
@@ -121,7 +121,7 @@ We can now simulate how long driver 1 would need for route 1 to create c11:
 
 Which finally brings us to a 166x166 cost matrix where we integrate all 166 professional truck drivers and 166 randomly selected routes.
 
-![image](https://user-images.githubusercontent.com/102478331/160674010-bc833b04-d8a0-47a5-b07f-f2b817dfac81.png)
+![image](https://user-images.githubusercontent.com/102478331/160679761-b73cfd36-6652-45ac-967e-92b0d976ce5d.png)
 
 #### Applying the assignment problem to truck drivers and route durations
 
