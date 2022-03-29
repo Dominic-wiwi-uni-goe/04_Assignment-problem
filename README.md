@@ -111,19 +111,35 @@ Where we receive the regression weights for each truck drivers.
 
 ![image](https://user-images.githubusercontent.com/102478331/160670960-f74e4f67-e046-41cd-b0e2-0a47ed5b8763.png)
 
+An from the initial dataset, we know the attributes of the routes that the dispatcher is planning for the truck drivers:
 
+![image](https://user-images.githubusercontent.com/102478331/160673553-b922047a-a444-4637-9387-31144bd5634e.png)
 
+We can now simulate how long driver 1 would need for route 1 to create c11:
 
+![image](https://user-images.githubusercontent.com/102478331/160673646-ddd9a90f-19a4-4b96-8e32-c24fcc8c1e71.png)
 
+Which finally brings us to a 166x166 cost matrix where we integrate all 166 professional truck drivers and 166 randomly selected routes.
 
+![image](https://user-images.githubusercontent.com/102478331/160674010-bc833b04-d8a0-47a5-b07f-f2b817dfac81.png)
 
+#### Applying the assignment problem to truck drivers and route durations
 
+When we have a look at the real data from the track and trace system, we can find that the randomly selected routes took **1,272.31 hours in total**.
 
+```
+library(lpSolve)
+costs <- as.matrix(Mappe1)
+costs
+lp.assign(costs)
+lp.assign(costs)$solution`
+```
 
+When we assign the driver with their individual capabilities to given routes, the LP gives **1.121.97** hours back:
 
+![image](https://user-images.githubusercontent.com/102478331/160679242-716628cd-d2bb-4173-a4cf-b5d2c0f39468.png)
 
-
-
+Therefore, with a simulation of the route durations and assignment based on these simulations, we find that savings up to 13.37% in the toal route time are possible.
 
 
 
