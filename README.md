@@ -30,7 +30,7 @@ In this chapter we will apply a work assignment optimization model in the from o
 lp.assign (cost.mat, direction = "min", presolve = 0, compute.sens = 0)
 ```
 
-The `lp.assign` funciton uses the following arguemnts:
+The `lp.assign` funciton uses the following arguments:
 
 - `cost.mat`: Matrix of costs: the ij-th element is the cost of assigning source i to destination j.
 - `direction`: Character vector, length 1, containing either "min" (the default) or "max"
