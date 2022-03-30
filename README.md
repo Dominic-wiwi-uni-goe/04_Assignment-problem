@@ -4,7 +4,7 @@
 
 ### The assignment problem in general
 
-The assignment problem is a special case of a linear programming problem. It is one of the fundamental combinational optimization problems in the branch of optimization or operations research in mathematics. Its goal consists in assigning **m resources** (usually workers) to **n tasks** (usually jobs) on a **one to one** basis while minimizing assignment costs. As a general rule, all jobs must be performed by exactly one worker and every worker must be assigned exclusively to one job.
+The assignment problem is a special case of a linear programming problem (LP). It is one of the fundamental combinational optimization problems in the branch of optimization or operations research in mathematics. Its goal consists in assigning **m resources** (usually workers) to **n tasks** (usually jobs) on a **one to one** basis while minimizing assignment costs. As a general rule, all jobs must be performed by exactly one worker and every worker must be assigned exclusively to one job.
 
 The basic notation of the assignment problem is
 
@@ -20,6 +20,9 @@ Cost matrix:
 
 ![image](https://user-images.githubusercontent.com/102478331/160680024-a8b60bbc-2802-4268-ae26-9c3b6dff7122.png)
 
+## What we will learn in this chapter
+
+In this chapter we will apply a work assignment optimization model in the from of a LP. Additionally, we will incorporate human-specific effects that we calculated in the regresion model.
 
 ### The assignment problem in R
 
