@@ -22,7 +22,7 @@ Cost matrix:
 
 ## What we will learn in this chapter
 
-In this chapter we will apply a work assignment optimization model in the from of a LP. Additionally, we will incorporate human-specific effects that we calculated in the regresion model.
+In this chapter we will apply a work assignment optimization model in the from of a LP. Additionally, we will incorporate human-specific effects that we calculated in the regresion model. Therefore, we will end up with a route assignment taking the individual capabilities of professional truck drivers into account.
 
 ### The assignment problem in R
 
