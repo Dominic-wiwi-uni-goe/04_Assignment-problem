@@ -83,7 +83,7 @@ And look at the solution for the assignment of **m resources** (usually workers)
 lp.assign(costs)$solution
 ```
 
-### Incorporating human facotrs in the work assignment problem: Delivery routes assigned to professional truck drivers
+### Incorporating human factors in the work assignment problem: Delivery routes assigned to professional truck drivers
 
 #### The assignment problem translated to truck drivers and route durations
 
