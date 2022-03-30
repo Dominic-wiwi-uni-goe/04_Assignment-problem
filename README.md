@@ -37,7 +37,7 @@ The `lp.assign` funciton uses the following arguments:
 - `presolve`: Numeric: presolve? Default 0 (no); any non-zero value means "yes." Currently ignored.
 - `compute.sens`: Numeric: compute sensitivity? Default 0 (no); any non-zero value means "yes." In that case presolving is attempted.
 
-**Note:** Presolve is a preprocess of the lp-model. It looks for ways to simplify it. For example it can delete unused variables and restrictions. Substitute fixed variable values by a constant and so on. The result is a new model that is less complex than the original model and likely solves faster. The result of presolve can be that there are less variables and/or constraints in the presolved model.
+**Note:** Presolve is a preprocess of the LP-model. It looks for ways to simplify it. For example it can delete unused variables and restrictions. Substitute fixed variable values by a constant and so on. The result is a new model that is less complex than the original model and likely solves faster. The result of presolve can be that there are less variables and/or constraints in the presolved model.
 
 ### Example for a general assignment problem in R
 
